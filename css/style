@@ -1,0 +1,36 @@
+h1{
+	color: #002147;
+	font-size: 60px
+}
+
+p{
+	font-size: 20px
+}
+
+h2{
+	color: white;
+	font-family: Georgia;
+	background-color: #002147;
+	font-size: 28px;
+	padding: 6px
+}
+
+h3{color: #002147;
+	font-family:Georgia;
+	font-size: 25;
+}
+
+table#t01{
+	text-align: left;
+	font-family: Georgia;
+	font-size: 20px;
+	width: 50%;
+	border-spacing: 3px
+}
+
+details{
+	font-size: 20px;
+	font-family: Georgia;
+	padding: 6px
+}
+
