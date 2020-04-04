@@ -23,12 +23,25 @@ h2{
 }
 
 h3{color: #002147;
+	font-size: 22px;
+	text-indent: 30px
 }
 
-#t01{
+#education{
 	text-align: left;
 	font-size: 20px;
-	width: 60%;
+	width: 80%;
+	line-height: 1.5;
+	text-indent: 10px;
+}
+
+#education td{
+	padding: 2px;
+}
+
+summary{
+	cursor: pointer;
+	line-height: 1.5;
 }
 
 details{
@@ -45,5 +58,23 @@ details{
 	border-radius: 8px;
 	margin-top: 10px;
 	margin-bottom: 12px;
-	text-align: justify;
+	text-align: left;
+}
+
+
+a.publication_link:link, a:visited {
+	background-color: #002147;
+	color: white;
+	padding: 6px;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid #002147;
+	border-top-right-radius: 9px;
+	border-bottom-left-radius: 9px;
+	display: inline-block;
+}
+
+a:hover,a:active {
+	background-color: white;
+	color: #002147;
 }
