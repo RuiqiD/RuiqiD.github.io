@@ -2,10 +2,29 @@
 	font-family: Georgia, "Times New Roman";
 }
 
+::selection {
+	color: white;
+	background-color: #002147;
+}
+
 h1{
 	color: #002147;
 	font-size: 60px;
 	font-variant: small-caps;
+}
+
+header{
+	border: none;
+	overflow: auto;
+}
+
+hr{
+	color: #002147;
+}
+
+#my_picture{
+	float: right;
+	padding: 45px 30px 10px 30px;
 }
 
 p{
@@ -37,11 +56,16 @@ h3{color: #002147;
 
 #education td{
 	padding: 2px;
+	vertical-align: top;
 }
 
 summary{
 	cursor: pointer;
 	line-height: 1.5;
+}
+
+summary:hover{
+	opacity: 0.66;
 }
 
 details{
@@ -50,8 +74,8 @@ details{
 	line-height: 1.2;
 }
 
-/* .details are used for publications's abstract and URL*/
-.details{
+/* .details p are used to select publications's abstract and URL*/
+details p{
 	font-size: 19px;
 	background-color: rgba(0,33,71,0.12);
 	padding: 8px;
@@ -74,7 +98,7 @@ a.publication_link:link, a:visited {
 	display: inline-block;
 }
 
-a:hover,a:active {
+a.publication_link:hover,a.publication_link:active {
 	background-color: white;
 	color: #002147;
 }
