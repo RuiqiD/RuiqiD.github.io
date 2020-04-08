@@ -1,10 +1,42 @@
 *{
 	font-family: Georgia, "Times New Roman";
+	box-sizing: border-box;
 }
 
 ::selection {
 	color: white;
 	background-color: #002147;
+}
+
+/*Navigation bar*/
+#navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: sticky;
+	top: 0;
+	color: white;
+	background-color: #002147;
+	font-variant: small-caps;
+}
+
+#navbar li {
+	float: left;
+}
+
+#navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+#navbar li a:hover {
+	color: #002147;
+	background-color: white;
 }
 
 h1{
@@ -18,10 +50,6 @@ header{
 	overflow: auto;
 }
 
-hr{
-	color: #002147;
-}
-
 #my_picture{
 	float: right;
 	padding: 45px 30px 10px 30px;
@@ -32,17 +60,16 @@ p{
 }
 
 h2{
-	border-left: 10px solid rgb(158,206,235);
-	border-radius:2px;
-	color: white;
-	background-color: #002147;
 	font-size: 25px;
-	font-variant: small-caps;
+	color: #002147;
 	padding: 6px;
+	border-bottom:solid #002147;
+	background-color: white;
+	font-variant: small-caps;
 }
 
 h3{color: #002147;
-	font-size: 22px;
+	font-size: 20px;
 	text-indent: 30px
 }
 
@@ -74,19 +101,20 @@ details{
 	line-height: 1.2;
 }
 
-/* .details p are used to select publications's abstract and URL*/
-details p{
+/* details is used to select publications's abstract and URL*/
+#details {
 	font-size: 19px;
 	background-color: rgba(0,33,71,0.12);
-	padding: 8px;
+	padding: 20px;
 	border-radius: 8px;
 	margin-top: 10px;
 	margin-bottom: 12px;
 	text-align: left;
+	text-indent: 0px;
+	line-height: 1.4;
 }
 
-
-a.publication_link:link, a:visited {
+a.publication_link:link, a.publication_link:visited {
 	background-color: #002147;
 	color: white;
 	padding: 6px;
@@ -102,3 +130,5 @@ a.publication_link:hover,a.publication_link:active {
 	background-color: white;
 	color: #002147;
 }
+
+
