@@ -21,6 +21,11 @@ header{
 	overflow: auto;
 }
 
+/*social media icon*/
+#social_media:hover{
+	opacity: 0.8;
+}
+
 /*profile picture*/
 #my_picture{
 	float: right;
@@ -76,7 +81,7 @@ h2{
 
 h3{color: #002147;
 	font-size: 23px;
-	text-indent: 30px
+	text-indent: 20px;
 }
 
 h4{
@@ -85,37 +90,46 @@ h4{
 }
 
 /*education section*/
-#education{
+.section_table{
 	text-align: left;
 	font-size: 20px;
 	width: 80%;
 	line-height: 1.5;
-	text-indent: 10px;
+	text-indent: 20px;
 }
 
-#education td{
+.section_table td{
 	padding: 2px;
 	vertical-align: top;
 }
 
 /*publications section*/
-summary{
+.title {
+	font-size: 20px;
+	padding: 6px;
+	line-height: 1.2;
+	text-indent: 20px;
 	cursor: pointer;
 	line-height: 1.5;
 }
 
-summary:hover{
+.title:hover{
 	opacity: 0.66;
 }
 
-details{
+/*slide up arrows*/
+.slideup {
+	float: right;
 	font-size: 20px;
 	padding: 6px;
-	line-height: 1.2;
+	text-align: center;
+	border: 2px solid #002147;
+	display: inline-block;
+	cursor: pointer;
 }
 
 /* details is used to select publications's abstract, details, and URL*/
-#details {
+.details {
 	font-size: 19px;
 	background-color: rgba(0,33,71,0.12);
 	padding: 20px;
@@ -125,6 +139,10 @@ details{
 	text-align: left;
 	text-indent: 0px;
 	line-height: 1.5;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: solid 3px #002147;
+	display: none;
 }
 
 /*publications' URLs*/
@@ -149,6 +167,8 @@ a.publication_link:hover,a.publication_link:active {
 #image_container{
 	position: relative;
 	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 #publication_figure{
 	display: block;
@@ -168,14 +188,22 @@ a.publication_link:hover,a.publication_link:active {
 	background-color: #002147;
 }
 #image_container:hover #text_overlay{
-	opacity: 0.9;
+	opacity: 0.8;
 }
+
 #text{
 	color: white;
-	font-size: 19px;
+	font-size: 1.2vw;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	overflow: hidden;
+}
+
+/*footer*/
+.footer {
+	background-color: #002147;
+	display: block;
+	margin-top: 80px;
 }
